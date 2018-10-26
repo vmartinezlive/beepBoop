@@ -1,38 +1,36 @@
-function resultOutputBB (inputNo) {
-  var resultDivByThree = [ ];
-  for (var i =0; i < inputNumber.length; i ++) {
-    if (inputNo % 3 === 0) {
-      return resultDivByThree.push ("I'm sorry, Dave. I'm afraid I can't do that.");
+function resultDivByThree(inputNo) {
+  var resultDivByThree = [];
+  for (var i = 0; i <= inputNo; i ++) {
+    if (i % 3 === 0) {
+      resultDivByThree.push("I'm sorry, Dave. I'm afraid I can't do that. ");
     }
-
   }
-  console.log(resultOutputBB);
+  return resultDivByThree;
 }
-  // else if (inputNo <= 3999 && inputNo >= 1000) {
-  //   var inputArray = inputNo.split('');
-  //   for (var i = 0; i < arrayNumerals.length; i++) {
-  //     if (parseInt(inputArray[3]) === i ) {
-  //       var resultArrayPos4 = arrayNumerals[i];
-  //       }
+function resultContainsZero(inputNo) {
+  for (var i = 0; i < arrayNumTens.length; i++) {
+     if inputNo === zero {
+       resultContainsZero.push("Bee, ");
+     }
+   }
 
 
 
+  var zero = "0";
+  var one = "1";
+  var resultConcat = [];
 
 
+  $(document).ready(function(){
+    $("#inputBeepBoop").submit(function(event){
+      event.preventDefault();
+
+      var inputNumber = parseInt($("#inputNumber").val());
+      var result = resultContainsZero(inputNumber);
+
+      // $(".resultBB").empty();
+      $(".resultBB").text(result);
 
 
-$(document).ready(function(){
-  $("#inputBeepBoop").submit(function(event){
-    event.preventDefault();
-
-
-    var inputNumber = $("#inputNumber").val();
-    var result = resultOutputBB(inputNumber);
-
-    $(".resultBB").empty();
-    $(".resultBB").append(result);
-
-
-
+    });
   });
-});
