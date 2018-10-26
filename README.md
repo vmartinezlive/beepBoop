@@ -19,7 +19,18 @@ Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do
 * follow link
 
 ## Objectives
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+
+Numbers that contain a 0 are replaced (all digits) with "Beep!"  
+Input: 10
+Output: Beep
+
+Numbers that contain a 1 are replaced (all digits) with "Boop!"
+Input: 21
+Output: Boop
+
+Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+Input: 21
+Output: 3
 
 ## Known Bugs
 
