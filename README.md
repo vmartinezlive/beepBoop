@@ -20,6 +20,10 @@ Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do
 
 ## Objectives
 
+Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+Input: 21
+Output: "I'm sorry, Dave. I'm afraid I can't do that."
+
 Numbers that contain a 0 are replaced (all digits) with "Beep!"  
 Input: 10
 Output: Beep
@@ -28,9 +32,6 @@ Numbers that contain a 1 are replaced (all digits) with "Boop!"
 Input: 21
 Output: Boop
 
-Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
-Input: 21
-Output: 3
 
 ## Known Bugs
 

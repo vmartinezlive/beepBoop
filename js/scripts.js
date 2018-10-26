@@ -1,24 +1,19 @@
-function resultDivByThree(inputNo) {
+function resultBeepBoop(inputNo) {
   var resultDivByThree = [];
   for (var i = 0; i <= inputNo; i ++) {
     if (i % 3 === 0) {
-      resultDivByThree.push("I'm sorry, Dave. I'm afraid I can't do that. ");
-    }
+     resultDivByThree.push("I'm sorry, Dave. I'm afraid I can't do that. ");
+   } else if (i.toString().includes("0") || i === 0) {
+     resultDivByThree.push("Beep! ");
+   } else if (i.toString().includes("1") || i === 1) {
+     resultDivByThree.push("Boop! ");
   }
   return resultDivByThree;
 }
-function resultContainsZero(inputNo) {
-  for (var i = 0; i < arrayNumTens.length; i++) {
-     if inputNo === zero {
-       resultContainsZero.push("Bee, ");
-     }
-   }
+
+}
 
 
-
-  var zero = "0";
-  var one = "1";
-  var resultConcat = [];
 
 
   $(document).ready(function(){
@@ -26,8 +21,8 @@ function resultContainsZero(inputNo) {
       event.preventDefault();
 
       var inputNumber = parseInt($("#inputNumber").val());
-      var result = resultContainsZero(inputNumber);
-
+      var result = resultBeepBoop(inputNumber);
+  console.log(result);
       // $(".resultBB").empty();
       $(".resultBB").text(result);
 
